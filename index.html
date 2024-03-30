@@ -1,0 +1,867 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sit Fayrouz</title>
+
+  <!-- 
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assests/css/style.css">
+
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&family=Poppins:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+</head>
+
+<body id="top">
+
+  <!-- 
+    - #HEADER
+  -->
+
+  <header class="header" data-header>
+
+    <div class="overlay" data-overlay></div>
+
+    <div class="header-top">
+      <div class="container">
+
+
+        <div class="header-btn-group">
+          <button class="nav-open-btn" aria-label="Open Menu" data-nav-open-btn>
+            <ion-icon name="menu-outline"></ion-icon>
+          </button>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="header-bottom">
+      <div class="container">
+        <nav class="navbar" data-navbar>
+
+          <div class="navbar-top">
+
+
+
+            <button class="nav-close-btn" aria-label="Close Menu" data-nav-close-btn>
+              <ion-icon name="close-outline"></ion-icon>
+            </button>
+
+          </div>
+
+          <ul class="navbar-list">
+
+            <li>
+              <a href="#home" class="navbar-link" data-nav-link data-lang="home ,الرئيسية">home</a>
+            </li>
+
+            <li>
+              <a href="#" class="navbar-link" data-nav-link data-lang="about us ,عننا">about us</a>
+            </li>
+
+            <li>
+              <a href="#destination" class="navbar-link" data-nav-link data-lang="destination ,الوجهه">destination</a>
+            </li>
+
+            <li>
+              <a href="#package" class="navbar-link" data-nav-link data-lang="packages ,الباقات">packages</a>
+            </li>
+
+            <li>
+              <a href="#gallery" class="navbar-link" data-nav-link data-lang="packages ,المعرض">gallery</a>
+            </li>
+
+            <li>
+              <a href="#contact" class="navbar-link" data-nav-link data-lang="packages ,تواصل معنا">contact us</a>
+            </li>
+
+          </ul>
+
+        </nav>
+
+        <button class="btn btn-primary" onclick="changeLanguage('en')">العربية</button>
+        <button class="btn btn-primary" onclick="changeLanguage('ar')">English</button>
+
+      </div>
+    </div>
+
+  </header>
+
+
+  <main>
+    <article>
+
+      <!-- 
+        - #HERO
+      -->
+
+      <section class="hero" id="home">
+        <div class="container">
+
+          <h2 class="h1 hero-title" data-lang="Journey to explore South Sinai ,رحلة لإستكشاف جنوب سيناء">Journey to
+            explore South Sinai</h2>
+
+          <p class="hero-text"
+            data-lang="South Sinai contains important historical monuments such as the famous Katerina temple and St. Catherine's monastery. ,تحتوي جنوب سيناء على آثار تاريخية مهمة ، مثل معبد كاترينا الشهير ودير سانت كاترين.">
+            South Sinai contains important historical monuments, such as the famous Katerina temple and St. Catherine's
+            monastery.
+          </p>
+
+          <div class="btn-group">
+            <button class="btn btn-primary" data-lang="learn more ,اعرف المزيد">Learn more</button>
+
+            <button class="btn btn-secondary" data-lang="Book now ,احجز الآن">Book now</button>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- 
+        - #TOUR SEARCH
+      -->
+
+      <section class="tour-search">
+        <div class="container">
+
+          <form action="" class="tour-search-form">
+
+            <div class="input-wrapper">
+              <label for="destination" class="input-label" data-lang="Search Destination* ,وجهة البحث*">Search
+                Destination*</label>
+
+              <input type="text" name="destination" id="destination" required class="input-field">
+            </div>
+
+            <div class="input-wrapper">
+              <label for="people" class="input-label" data-lang="Search Destination* ,عدد الأفراد*">People
+                Number*</label>
+
+              <input type="number" name="people" id="people" required class="input-field">
+            </div>
+
+            <div class="input-wrapper">
+              <label for="checkin" class="input-label" data-lang="checkin date ,تاريخ تسجيل الوصول**">Checkin
+                Date**</label>
+
+              <input type="date" name="checkin" id="checkin" required class="input-field">
+            </div>
+
+            <div class="input-wrapper">
+              <label for="checkout" class="input-label" data-lang="checkout date ,تاريخ الخروج*">Checkout Date*</label>
+
+              <input type="date" name="checkout" id="checkout" required class="input-field">
+            </div>
+
+            <button type="submit" class="btn btn-secondary" data-lang="inquire now ,استفسر الآن">Inquire now</button>
+
+          </form>
+
+        </div>
+      </section>
+
+      <!-- 
+        - #POPULAR
+      -->
+
+      <section class="popular" id="destination">
+        <div class="container">
+
+          <p class="section-subtitle" data-lang="uncover place ,كشف مكان">Uncover place</p>
+
+          <h2 class="h2 section-title" data-lang="popular destination ,وجهة شعبية">Popular destination</h2>
+
+          <p class="section-text"
+            data-lang="South Sinai an oasis of natural beauty under the clear sky of Egypt where the sea and mountains meet in a
+          picturesque dance. ,جنوب سيناء واحة من الجمال الطبيعي تحت سماء مصر الصافية حيث يلتقي البحر والجبال في رقصة خلابة.">
+            South Sinai an oasis of natural beauty under the clear sky of Egypt where the sea and mountains meet in a
+            picturesque dance.
+          </p>
+
+          <ul class="popular-list">
+
+            <li>
+              <div class="popular-card">
+
+                <figure class="card-img">
+                  <img src="./assests/images/Abo-Radis.jpg" alt="Abo-Radis" loading="lazy">
+                </figure>
+
+                <div class="card-content">
+
+                  <div class="card-rating">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                  </div>
+
+                  <p class="card-subtitle">
+                    <a href="Abo-radis.html" target="_blank" data-lang="Abo-Radis , ابو رديس">Abo-Radis</a>
+                  </p>
+
+                  <p class="card-text"
+                    data-lang="Abu Redis is one of the beautiful coastal areas in South Sinai. , أبو رديس هي واحدة من المناطق الساحلية الجميلة في جنوب سيناء.">
+                    Abu Redis is one of the beautiful coastal areas in South Sinai.
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="popular-card">
+
+                <figure class="card-img">
+                  <img src="./assests/images/Abo-Zanima.jpg" alt="Abo-zanima" loading="lazy">
+                </figure>
+
+                <div class="card-content">
+
+                  <div class="card-rating">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                  </div>
+
+                  <p class="card-subtitle">
+                    <a href="Abo-zanima.html" target="_blank" data-lang="Abo zanima, ابو زنيمة">Abu zanima</a>
+                  </p>
+
+
+                  <p class="card-text"
+                    data-lang="Abu zanima.. A charming oasis in the heart of South Sinai. ,أبو زينيما.. واحة ساحرة في قلب جنوب سيناء.">
+                    Abu zanima.. A charming oasis in the heart of South Sinai.
+                  </p>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="popular-card">
+
+                <figure class="card-img">
+                  <img src="./assests/images/toor.jpg" alt="EL-toor" loading="lazy">
+                </figure>
+
+                <div class="card-content">
+
+                  <div class="card-rating">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                  </div>
+
+                  <p class="card-subtitle">
+                    <a href="eltoor.html" target="_blank" data-lang="El-toor , الطور">EL-toor</a>
+                  </p>
+                  <p class="card-text"
+                    data-lang="The city of al-Tur the fragrant history and the beauty of nature are in unrivaled harmony. , مدينة الطور والتاريخ العطرة وجمال الطبيعة في وئام لا مثيل له. ">
+                    The city of al-Tur, the fragrant history and the beauty of nature are in unrivaled harmony.
+                  </p>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="popular-card">
+
+                <figure class="card-img">
+                  <img src="./assests/images/dahab.jpg" alt="Dahab" loading="lazy">
+                </figure>
+
+                <div class="card-content">
+
+                  <div class="card-rating">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                  </div>
+
+                  <p class="card-subtitle">
+                    <a href="dahab.html" target="_blank" data-lang="Dahab , دهب">Dahab</a>
+                  </p>
+
+                  <p class="card-text"
+                    data-lang="Dahab the Pearl of the Red Sea coast combines the charm of the desert and the beauty of the sea. , دهب لؤلؤة ساحل البحر الأحمر يجمع بين سحر الصحراء وجمال البحر.">
+                    Dahab the Pearl of the Red Sea coast combines the charm of the desert and the beauty of the sea.
+                  </p>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="popular-card">
+
+                <figure class="card-img">
+                  <img src="./assests/images/Ras-sidr.jpg" alt="Ras Sidr" loading="lazy">
+                </figure>
+
+                <div class="card-content">
+
+                  <div class="card-rating">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                  </div>
+
+                  <p class="card-subtitle">
+                    <a href="Ras Sidr.html" target="_blank" data-lang="Ras Sidr , رأس سدر">Ras Sidr</a>
+                  </p>
+
+                  <p class="card-text"
+                    data-lang="Ras Sidr is home to incomparable natural beauty where the golden rays of the sun converge , رأس سدر موطن لجمال طبيعي لا يُضاهى حيث تتلاقى أشعة الشمس الذهبية">
+                    Ras Sidr is home to incomparable natural beauty where the golden rays of the sun converge
+                  </p>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="popular-card">
+
+                <figure class="card-img">
+                  <img src="./assests/images/sant.jpg" alt="Saint Catherine" loading="lazy">
+                </figure>
+
+                <div class="card-content">
+
+                  <div class="card-rating">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                  </div>
+
+                  <p class="card-subtitle">
+                    <a href="sant.html" target="_blank" data-lang="Saint Catherine , سانت كاترين">Saint Catherine</a>
+                  </p>
+
+
+                  <p class="card-text"
+                    data-lang="St. Catherine is a historical and religious city located in the arms of the Sinai mountain range. ,سانت كاترين مدينة تاريخية ودينية تتواجد بأحضان سلسلة جبال سيناء.">
+                    St. Catherine is a historical and religious city located in the arms of the Sinai mountain range.
+                  </p>
+
+                </div>
+
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #PACKAGE
+      -->
+
+      <section class="package" id="package">
+        <div class="container">
+
+          <p class="section-subtitle" data-lang="Popular packages ,حزم شعبية">Popular packages</p>
+
+          <h2 class="h2 section-title" data-lang="Checkout Our packages ,تحقق من الحزم لدينا">Checkout Our packages</h2>
+
+          <p class="section-text"
+            data-lang="Travel offers to South Sinai add to travelers an exceptional experience that blends natural beauty and luxury entertainment. Here are some good words about travel offers to this wonderful destination ,عروض السفر إلى جنوب سيناء تضيف للمسافرين تجربة استثنائية تمزج بين الجمال الطبيعي والترفيه الفاخر. إليك بعض الكلمات الجيدة حول عروض السفر إلى هذه الوجهة الرائعة">
+            Travel offers to South Sinai add to travelers an exceptional experience that blends natural beauty and
+            luxury entertainment. Here are some good words about travel offers to this wonderful destination
+          </p>
+
+          <ul class="package-list">
+
+            <li>
+              <div class="package-card">
+
+                <figure class="card-banner">
+                  <img src="./assests/images/sharm.jpg" alt="Experience The Great Holiday On Beach" loading="lazy">
+                </figure>
+
+                <div class="card-content">
+
+                  <h3 class="h3 card-title"
+                    data-lang="Experience a great holiday in Sharm el Sheikh ,تجربة عطلة كبيرة في شرم الشيخ">Experience
+                    The Great Holiday in Sharm el Sheikh</h3>
+
+                  <p class="card-text"
+                    data-lang="Sharm el Sheikh is a piece of paradise on earth where the enchanting colors of nature are in harmony
+                  with the bright blue colors of the sea. , شرم الشيخ هي قطعة من الجنة على الأرض حيث تتناغم ألوان الطبيعة الساحرة مع ألوان البحر الزرقاء الزاهية.">
+                    Sharm el Sheikh is a piece of paradise on earth where the enchanting colors of nature are in harmony
+                    with the bright blue colors of the sea.
+                  </p>
+
+                  <ul class="card-meta-list">
+
+                    <li class="card-meta-item">
+                      <div class="meta-box">
+                        <ion-icon name="time"></ion-icon>
+
+                        <p class="text">7D/6N</p>
+                      </div>
+                    </li>
+
+                    <li class="card-meta-item">
+                      <div class="meta-box">
+                        <ion-icon name="people"></ion-icon>
+
+                        <p class="text">no: 10</p>
+                      </div>
+                    </li>
+
+                    <li class="card-meta-item">
+                      <div class="meta-box">
+                        <ion-icon name="location"></ion-icon>
+
+                        <p class="text" data-lang="South Sinai , جنوب سيناء">South Sinai</p>
+                      </div>
+                    </li>
+
+                  </ul>
+
+                </div>
+
+                <div class="card-price">
+
+                  <div class="wrapper">
+
+                    <p class="reviews" data-lang="25 reviews , 25 تعليقات">(25 reviews)</p>
+
+                    <div class="card-rating">
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                    </div>
+
+                  </div>
+
+                  <p class="price">
+                    1800 L.E
+                    <span data-lang="/ per person , / للشخص الواحد">/ per person</span>
+                  </p>
+
+                  <button class="btn btn-secondary" data-lang="Book Now , احجز الآن">Book Now</button>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="package-card">
+
+                <figure class="card-banner">
+                  <img src="./assests/images/taba.jpg" alt="Taba" loading="lazy">
+                </figure>
+
+                <div class="card-content">
+
+                  <h3 class="h3 card-title" data-lang="Summer Holiday To Taba , عطلة الصيف إلى طابا">Summer Holiday To
+                    Taba</h3>
+
+                  <p class="card-text"
+                    data-lang="Taba a world of enchanting beauty where the golden rays of the sun converge with the blue colors of the sea , طابا، عالم من الجمال الساحر، حيث تتلاقى أشعة الشمس الذهبية مع ألوان البحر الزرقاء">
+                    Taba a world of enchanting beauty where the golden rays of the sun converge with the blue colors of
+                    the sea
+
+                  </p>
+
+                  <ul class="card-meta-list">
+
+                    <li class="card-meta-item">
+                      <div class="meta-box">
+                        <ion-icon name="time"></ion-icon>
+
+                        <p class="text">7D/6N</p>
+                      </div>
+                    </li>
+
+                    <li class="card-meta-item">
+                      <div class="meta-box">
+                        <ion-icon name="people"></ion-icon>
+
+                        <p class="text">pax: 10</p>
+                      </div>
+                    </li>
+
+                    <li class="card-meta-item">
+                      <div class="meta-box">
+                        <ion-icon name="location"></ion-icon>
+
+                        <p class="text" data-lang="South Sinia , جنوب سيناء">South Sinai</p>
+                      </div>
+                    </li>
+
+                  </ul>
+
+                </div>
+
+                <div class="card-price">
+
+                  <div class="wrapper">
+
+                    <p class="reviews" data-lang="20 reviews , 20 تعليقات">(20 reviews)</p>
+
+                    <div class="card-rating">
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                    </div>
+
+                  </div>
+
+                  <p class="price">
+                    2000 L.E
+                    <span data-lang="/ per person , / للشخص الواحد">/ per person</span>
+                  </p>
+
+                  <button class="btn btn-secondary" data-lang="Book Now , احجز الآن">Book Now</button>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="package-card">
+
+                <figure class="card-banner">
+                  <img src="./assests/images/Nuweiba.jpg" alt="Nuweiba's Weekend Vacation" loading="lazy">
+                </figure>
+
+                <div class="card-content">
+
+                  <h3 class="h3 card-title" data-lang="Nuweiba's Weekend Vacation , عطلة نهاية الأسبوع في نويبع">
+                    Nuweiba's Weekend Vacation</h3>
+
+                  <p class="card-text"
+                    data-lang="When you look at the beauty of Nuweiba you feel like you are inside a painting full of bright colors. ,عندما تنظر إلى جمال نويبع تشعر وكأنك داخل لوحة مليئة بالألوان الزاهية.">
+                    When you look at the beauty of Nuweiba you feel like you are inside a painting full of bright
+                    colors.
+                  </p>
+
+                  <ul class="card-meta-list">
+
+                    <li class="card-meta-item">
+                      <div class="meta-box">
+                        <ion-icon name="time"></ion-icon>
+
+                        <p class="text">7D/6N</p>
+                      </div>
+                    </li>
+
+                    <li class="card-meta-item">
+                      <div class="meta-box">
+                        <ion-icon name="people"></ion-icon>
+
+                        <p class="text">pax: 10</p>
+                      </div>
+                    </li>
+
+                    <li class="card-meta-item">
+                      <div class="meta-box">
+                        <ion-icon name="location"></ion-icon>
+
+                        <p class="text" data-lang="South Sinai , جنوب سيناء">South Sinai</p>
+                      </div>
+                    </li>
+
+                  </ul>
+
+                </div>
+
+                <div class="card-price">
+
+                  <div class="wrapper">
+
+                    <p class="reviews" data-lang="40 reviews , 40 تعليقات">(40 reviews)</p>
+
+                    <div class="card-rating">
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                    </div>
+
+                  </div>
+
+                  <p class="price">
+                    2500 L.E
+                    <span data-lang="/ per person , / للشخص الواحد">/ per person</span>
+                  </p>
+
+                  <button class="btn btn-secondary" data-lang="Book Now , احجز الآن">Book Now</button>
+
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #GALLERY
+      -->
+
+      <section class="gallery" id="gallery">
+        <div class="container">
+
+          <p class="section-subtitle" data-lang="Photo Gallery , معرض الصور">Photo Gallery</p>
+
+          <h2 class="h2 section-title" data-lang="Photo's From Travellers ,صور من المسافرين ">Photo's From Travellers
+          </h2>
+
+          <p class="section-text"
+            data-lang="Travelers to South Sinai are overwhelmed with a sense of excitement and thrill as they explore the beauty of the Golden deserts and the charm of the Red Sea on an unforgettable journey. , المسافرون إلى جنوب سيناء يُغمرهم شعور بالإثارة والتشويق حيث يستكشفون جمال الصحاري الذهبية وسحر البحر الأحمر في رحلة لا تنسى.">
+            Travelers to South Sinai are overwhelmed with a sense of excitement and thrill as they explore the beauty of
+            the Golden deserts and the charm of the Red Sea on an unforgettable journey.
+          </p>
+
+          <ul class="gallery-list">
+
+            <li class="gallery-item">
+              <figure class="gallery-image">
+                <img src="./assests/images/gallery-1.jpg" alt="Gallery image">
+              </figure>
+            </li>
+
+            <li class="gallery-item">
+              <figure class="gallery-image">
+                <img src="./assests/images/gallery-2.jpg" alt="Gallery image">
+              </figure>
+            </li>
+
+            <li class="gallery-item">
+              <figure class="gallery-image">
+                <img src="./assests/images/gallery-3.jpg" alt="Gallery image">
+              </figure>
+            </li>
+
+            <li class="gallery-item">
+              <figure class="gallery-image">
+                <img src="./assests/images/gallery-4.jpg" alt="Gallery image">
+              </figure>
+            </li>
+
+            <li class="gallery-item">
+              <figure class="gallery-image">
+                <img src="./assests/images/gallery-5.jpg" alt="Gallery image">
+              </figure>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+
+      <!-- 
+        - #CTA
+      -->
+
+      <section class="cta" id="contact">
+        <div class="container">
+
+          <div class="cta-content">
+            <p class="section-subtitle" data-lang="Call To Action , دعوة إلى العمل">Call To Action</p>
+
+            <h2 class="h2 section-title"
+              data-lang="Ready For Unforgatable Travel. Remember Us! , على استعداد للسفر لا تنسى. تذكر لنا!">Ready For
+              Unforgatable Travel. Remember Us!</h2>
+
+            <p class="section-text"
+              data-lang="When travelers set off to South Sinai they begin an exploration journey full of adventures and
+            discoveries that make them touch the beauty of nature and the splendor of history at every corner. ,عندما ينطلق المسافرون إلى جنوب سيناء يبدأون رحلة استكشاف مليئة بالمغامرات والاكتشافات تجعلهم يتلمسون جمال الطبيعة وروعة التاريخ في كل زاوية.">
+              When travelers set off to South Sinai they begin an exploration journey full of adventures and
+              discoveries that make them touch the beauty of nature and the splendor of history at every corner. </p>
+          </div>
+
+          <button class="btn btn-secondary" data-lang="Contact Us ! , اتصل بنا !">Contact Us !</button>
+
+        </div>
+      </section>
+
+    </article>
+  </main>
+
+
+
+
+
+  <!-- 
+    - #FOOTER
+  -->
+
+  <footer class="footer">
+
+    <div class="footer-top">
+      <div class="container">
+
+        <div class="footer-brand">
+
+          <a href="#" class="logo">
+            <!-- <img src="./assests/images/logo.svg" alt="Tourly logo"> -->
+            <p>Sit Fayrouz</p>
+          </a>
+
+          <p class="footer-text">
+            Urna ratione ante harum provident, eleifend, vulputate molestiae proin fringilla, praesentium magna conubia
+            at
+            perferendis, pretium, aenean aut ultrices.
+          </p>
+
+        </div>
+
+        <div class="footer-contact">
+
+          <h4 class="contact-title">Contact Us</h4>
+
+          <p class="contact-text">
+            Feel free to contact and reach us !!
+          </p>
+
+          <ul>
+
+            <li class="contact-item">
+              <ion-icon name="call-outline"></ion-icon>
+
+              <a href="tel:+01123456790" class="contact-link">+01 (123) 4567 90</a>
+            </li>
+
+            <li class="contact-item">
+              <ion-icon name="mail-outline"></ion-icon>
+
+              <a href="mailto:info.tourly.com" class="contact-link">info.tourly.com</a>
+            </li>
+
+            <li class="contact-item">
+              <ion-icon name="location-outline"></ion-icon>
+
+              <address>3146 Koontz, California</address>
+            </li>
+
+          </ul>
+
+        </div>
+
+        <div class="footer-form">
+
+          <p class="form-text">
+            Subscribe our newsletter for more update & news !!
+          </p>
+
+          <form action="" class="form-wrapper">
+            <input type="email" name="email" class="input-field" placeholder="Enter Your Email" required>
+
+            <button type="submit" class="btn btn-secondary">Subscribe</button>
+          </form>
+
+        </div>
+
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container">
+
+        <p class="copyright">
+          &copy; 2022 <a href="">codewithsadee</a>. All rights reserved
+        </p>
+
+        <ul class="footer-bottom-list">
+
+          <li>
+            <a href="#" class="footer-bottom-link">Privacy Policy</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-bottom-link">Term & Condition</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-bottom-link">FAQ</a>
+          </li>
+
+        </ul>
+
+      </div>
+    </div>
+
+  </footer>
+
+
+
+
+
+  <!-- 
+    - #GO TO TOP
+  -->
+
+  <a href="#top" class="go-top" data-go-top>
+    <ion-icon name="chevron-up-outline"></ion-icon>
+  </a>
+
+
+
+
+
+  <!-- 
+    - custom js link
+  -->
+  <script src="./assests/js/script.js"></script>
+
+  <!-- 
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
